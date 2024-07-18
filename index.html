@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Invest assessment website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="//unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="//unpkg.com/bootstrap-select@1.12.4/dist/css/bootstrap-select.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="//unpkg.com/bootstrap-select-country@4.2.0/dist/css/bootstrap-select-country.min.css"
+        type="text/css" />
+
+    <script src="//unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="//unpkg.com/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="//unpkg.com/bootstrap-select@1.12.4/dist/js/bootstrap-select.min.js"></script>
+    <script src="//unpkg.com/bootstrap-select-country@4.2.0/dist/js/bootstrap-select-country.min.js"></script>
+
+    <script>
+        $(function(){
+            $("#navbar-container").load("navbar.html");
+            $("#footer-container").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar start -->
+    <div id="navbar-container"></div>
+    <!-- Navbar End -->
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control bg-transparent p-3" placeholder="keywords"
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-light py-6 my-6 mt-0">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7 col-md-12">
+                    <h1 class="display-1 mb-4 animated bounceInDown">Welcome</h1>
+                    <h1 class="display-1 mb-4 animated bounceInLeft">to our assessment</h1s>
+                        <h1 class="display-1 mb-4 animated bounceInRight">tool website</h1>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <img src="img/hero.png" class="img-fluid rounded animated zoomIn" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- About Satrt -->
+    <div class="container-fluid py-6">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow bounceInLeft" data-wow-delay="0.1s">
+                   
+                </div>
+                <div class="col-lg-7 wow bounceInDown" data-wow-delay="0.3s">
+                    
+                    <h1 class="display-5 mb-4 animated"> About micro-credentials</h1>
+                    <p class="mb-4">Micro-credentials are short, focused learning programs designed to provide specific skills or knowledge in a particular area. Unlike traditional degree programs, which may take several years to complete and cover a broad range of subjects, micro-credentials are typically more targeted and can often be completed in a matter of weeks or months. They are often used for professional development, reskilling, or upskilling, allowing individuals to quickly gain competencies that are directly applicable to their careers.</p>
+                    <a href="about.html" class="btn btn-primary py-3 px-5 rounded-pill">Learn more<i
+                            class="fas fa-arrow-right ps-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Form Start -->
+    <div class="container-fluid contact py-6 wow bounceInLeft" data-wow-delay="0.1s">
+        <div class="container vw-100" id="homepage-form">
+            <div class="d-flex justify-content-center">
+                <div class="col-10">
+                    <div class="border-bottom border-top border-primary bg-light py-5 px-4">
+                        <div class="text-center">
+                            <h1 class="display-5 mb-5">Please fill out the form below to begin the assessment</h1>
+                        </div>
+                        <form class="d-flex flex-wrap gap-4 form">
+                            <div class="flex-item">
+                                <input type="text" class="form-control border-primary p-3" required="True"
+                                    placeholder="Enter Your Institution's name">
+                            </div>
+                            <div class="flex-item">
+                                <input type="text" class="form-control border-primary p-3" required="True"
+                                    placeholder="Enter Your Name">
+                            </div>
+                            <div class="flex-item">
+                                <input type="email" class="form-control border-primary p-3" required="True"
+                                    placeholder="Enter Your Email">
+                            </div>
+                            <div class="flex-item">
+                                <select class="selectpicker countrypicker form-control border-primary" data-flag="True"
+                                    required="True" data-default="GR"
+                                    data-countries="AT,BE,BG,HR,CY,CZ,DK,EE,FI,FR,DE,GR,HU,IE,IT,LV,LT,LU,MT,NL,PL,PT,RO,SK,SI,ES,SE"></select>
+                                <script>$('.countrypicker').countrypicker();</script>
+                            </div>
+                            <div class="flex-item">
+                                <select class="form-select border-primary" required="True"
+                                    aria-label="Default select example">
+                                    <option disabled selected>Select your Position</option>
+                                    <option value="1">Professor</option>
+                                    <option value="2">Secretary</option>
+                                    <option value="3">Other faculty</option>
+                                </select>
+                            </div>
+                            <div class="flex-item">
+                                <select class="form-select border-primary" required="True"
+                                    aria-label="Default select example">
+                                    <option disabled selected>Does your university offer micro-credentials?</option>
+                                    <option value="1">Yes</option>
+                                    <option value="2">No</option>
+                                    <option value="3">Will offer in the future</option>
+                                </select>
+                            </div>
+                            <div class="flex-item">
+                                <input class="form-control border-primary p-3" required="True" type="number" min="1"
+                                    max="99" placeholder="How many departments are in your institution?">
+                            </div>
+                            <div class="flex-item">
+                                <input class="form-control border-primary p-3" required="True" type="number" min="1"
+                                    max="999999" placeholder="How many students are in your institution?">
+                            </div>
+                            <div class="w-100 text-center mt-4">
+                                <button type="submit" class="btn btn-primary px-5 py-3 rounded-pill">Begin Assessment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Form End -->
+
+   
+    <!-- Footer Start -->
+    <div id="footer-container"></div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
